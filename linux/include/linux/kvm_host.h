@@ -142,6 +142,7 @@ struct kvm_vcpu {
 	gpa_t mmio_phys_addr;
 #endif
 
+	struct ctxop *ctxop;
 	struct kvm_vcpu_arch arch;
 };
 
